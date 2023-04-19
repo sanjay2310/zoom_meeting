@@ -1,6 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.zoom_fake1">
+    package="com.example.zoom_fake1"
+    xmlns:tools="http://schemas.android.com/tools">
+    
    <application
+        tools:replace="android:label"
         android:label="zoom_fake1"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">

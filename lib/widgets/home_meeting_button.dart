@@ -14,7 +14,7 @@ class HomeMeetingButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => {onPressed},
+      onTap: onPressed,
       child: Column(
         children: [
           Container(
