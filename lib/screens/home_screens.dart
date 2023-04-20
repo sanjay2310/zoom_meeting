@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:zoom_fake1/resource/auth_method.dart';
 import 'package:zoom_fake1/screens/history_meeting.dart';
 import 'package:zoom_fake1/screens/meeting_screen.dart';
 import 'package:zoom_fake1/utils/colors.dart';
+import 'package:zoom_fake1/widgets/custom_widget.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -20,9 +22,10 @@ class _HomeScreenState extends State<HomeScreen> {
 
   List<Widget> pages = [
     MeetingScreen(),
-    const HistoryMeeting(),
-    const Text('checck'),
-    const Text('checc')
+    const HistoryMeetingScreen(),
+    const Text('Cooming soon'),
+    CustomButton(text: 'Logout', onPressed:()=> AuthMethods().signOut())
+    
   ];
   @override
   Widget build(BuildContext context) {
